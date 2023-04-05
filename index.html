@@ -9,7 +9,45 @@
 </head>
 <body >
     <!-- Nav Bar/Header -->
-
+       <!-- NAV BAR -->
+       <div class="fixed navbar bg-primary">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl">Updated<em class="text-white">Foam</em></a>
+        </div>
+        <div class="flex-none">
+        <!-- Desktop Nav Menu -->
+        <ul class="hidden md:menu md:menu-horizontal md:px-1">
+          <li><a href="#heroSection">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li tabindex="0">
+              <a href="#location">
+                Locations
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+              </a>
+              <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 ">
+                <li class="hover-bordered active"><a href="#location">Scarborough</a></li>
+                <li class="hover-bordered active"><a>Weston</a></li>
+                <li class="hover-bordered active"><a>North York</a></li>
+                <li class="hover-bordered active"><a>New Market</a></li>
+              </ul>
+          </li>
+          <li><a href='https://www.youtube.com/@updatedfoam2191'>Media</a></li>
+          <li><a href="#contactUs">Contact Us</a></li>
+        </ul>
+    
+        <!-- Mobile Nav Menu -->
+        <div class="dropdown dropdown-end md:hidden lg:hidden xl:hidden">
+          <label tabindex="0" class="btn btn-ghost normal-case text-lg">Menu</label>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="#heroSection">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href='#location'>Locations</a></li>
+            <li><a href='https://www.youtube.com/@updatedfoam2191'>Media</a></li>
+            <li><a href='#contactUs'>Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+        </div>
     <!-- Body -->
 
     <div id="pomoBody">
