@@ -4,8 +4,39 @@
 
 
 // Desktop View
-document.querySelector('#toggleTheme').addEventListener('toggle',themeToggle);
+document.querySelector('#toggleTheme').addEventListener("click",themeSwitch);
+document.querySelector('#toggleThemeMobile').addEventListener("click",themeSwitchMobile);
 
-function themeToggle(){
-    document.querySelector('#sunOrMoon').innerHTML = '<i class="fa-solid fa-sun-bright"></i>'
+
+const htmlTheme = document.getElementById('webpage')
+
+
+function themeSwitch(){
+    
+    let themeRet = htmlTheme.getAttribute('data-theme')
+
+    console.log(themeRet)
+
+    if(themeRet === 'dark'){
+        
+        htmlTheme.setAttribute('data-theme','emerald')
+    }else{
+        htmlTheme.setAttribute('data-theme','dark')
+    }
+    
+}
+
+function themeSwitchMobile(){
+    
+    let themeRet = htmlTheme.getAttribute('data-theme')
+
+    console.log(themeRet)
+
+    if(themeRet === 'dark'){
+        
+        htmlTheme.setAttribute('data-theme','emerald')
+    }else{
+        htmlTheme.setAttribute('data-theme','dark')
+    }
+    
 }
